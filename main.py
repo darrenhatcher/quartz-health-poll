@@ -1,4 +1,3 @@
-__author__ = 'Darren Hatcher' 
 __version__ = '1.0.0'
 
 import time
@@ -44,7 +43,7 @@ gMetrics_to_use = { "AveragePayloadSizeEvents" : "True",
         "PostgresQvmCPU" : "True", 
         "ProcessCPU" : "True", 
         "ProcessCPUTime" : "True", 
-		"PostgresQvmReadIO" : "True", 
+        "PostgresQvmReadIO" : "True", 
         "RunningQueries" : "True", 
         "RunningSorts" : "True", 
         "RunQueue" : "True", 
@@ -58,7 +57,7 @@ gMetrics_to_use = { "AveragePayloadSizeEvents" : "True",
         "TomcatSessionCount" : "True", 
         "UserCpu" : "True", 
         "WorkerThreadInfo" : "True"
-		}
+        }
 #-------------------------------------------------------------------------------
 def info_log(sMessage,sType):
 	print(sType+": "+sMessage)
