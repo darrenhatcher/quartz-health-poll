@@ -1,5 +1,5 @@
 # IBM QRadar Health Poll & Syslog Forward (quartz-health-poll)
-Basic python script to poll QRadar for some health stats and send to a syslog destination
+Basic python script to poll QRadar for some health stats and send to a syslog destination.
 
 This came about as the SIEM does not easily forward a subset of information for monitoring
 of applications. An ironic twist in that an event monitoring tool does not share its health very
@@ -23,8 +23,8 @@ To use the script bear the following in mind:
 ## Health Metrics
 This specific script performs an AQL query to retrieve certain health statistics for the SIEM. These
 can be enabled for sending to the syslog destination by adding to the dictionary **gMetrics_to_use**. 
-As a general AQL query may return many unwanted, this permits filtering to what you want to onward 
-send.
+As a general AQL query may return many unwanted results, this permits filtering to what you want 
+to onward send.
 
 The AQL query can be for other purposes, but the function to parse and forward would need to 
 be adjusted to suit.
