@@ -19,6 +19,7 @@ To use the script bear the following in mind:
 * If run as a cron job, all file paths need to be absolute, so adjust or code in to fit.
 * Three syslog destinations can be supported, although only one is used. 
 * The syslog destination is on port 514 - which can be changed in the config.ini file.
+* If this is not run on the SIEM, you need to ensure the SSL certificate is valid on the host, or the python script will return a **CERTIFICATE_VERIFY_FAILED** error. 
 
 ## Health Metrics
 This specific script performs an AQL query to retrieve certain health statistics for the SIEM. These
